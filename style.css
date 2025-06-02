@@ -41,7 +41,11 @@ main {
   padding: 40px 0;
 }
 
-h1, h2 {
+h1 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+h2 {
   color: #092E44;
   margin-bottom: 10px;
 }
