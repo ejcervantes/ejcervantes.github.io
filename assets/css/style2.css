@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
   box-sizing: border-box;
   font-family: 'Myanmar Sans Pro', sans-serif;
@@ -110,78 +111,62 @@ header .logo img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   min-height: 100vh;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-  padding: 0% 20%;
+  padding: 0% 10%;
 }
 
 .HERO img {
   max-width: 100%;
-  width: auto;
+  height: auto;
   margin-bottom: 50px;
 }
 
 .HERO p {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .nosotros {
   background-image: url("../img/fondo2.png");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
-
-  height: auto;
-  width: auto;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-  padding: 1% 20% 5%;
+  padding: 5% 10%;
 }
 
 .txtconimagen {
   display: flex;
-  flex-direction: row;           /* organiza horizontalmente */
-  justify-content: space-between; /* deja espacio entre elementos */
-  align-items: center;           /* alinea verticalmente */
-  gap: 10rem;                     /* espacio mínimo entre elementos */
-  padding: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
   background-color: #092E44;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
-.txtconimagen h2 {
-  color: #FFFFFF;
-  text-align: center;
-}
-
+.txtconimagen h2,
 .txtconimagen p {
   color: #FFFFFF;
-  text-align: justify;
 }
 
 .txtconimagen img {
+  max-width: 100%;
   height: auto;
-  width: 50%;
-  margin: 3px;
+  flex: 1 1 300px;
 }
-
-.servicios {
-  min-height: 100vh;
-}
-
 
 .servicios .inicio {
   display: flex;
@@ -201,7 +186,7 @@ header .logo img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
 .servicio {
@@ -220,27 +205,20 @@ header .logo img {
   height: auto;
 }
 
-.nosotros .parte {
-  background-color: #353535;
-  opacity: 70%;
-  border-radius: 10px;
-  width: 100%;
-  margin-top: 3rem;
-  padding: 3rem;
-  color: #FFFFFF;
-}
-
-.nosotros .parte h2{
-  color: #FFFFFF;
-}
-
+.nosotros .parte,
 .HERO .parte {
-  background-color: #092E44;
+  background-color: #353535;
+  opacity: 0.9;
   border-radius: 10px;
   width: 100%;
   margin-top: 3rem;
-  padding: 3rem;
+  padding: 2rem;
   color: #FFFFFF;
+}
+
+.nosotros .parte h2,
+.HERO .parte h2 {
+    color: #FFFFFF;
 }
 
 .HERO .parte .info-contacto {
@@ -248,45 +226,10 @@ header .logo img {
   margin-top: 3rem;
 }
 
-@media only screen and (max-width: 950px) {
-  .menu {
-    flex-direction: column;
-    background-color: #092e44;
-    align-items: start;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-
-  .menu a {
-    margin-left: 12px;
-  }
-
-  .menu li {
-    margin-bottom: 10px;
-  }
-
-  .menu-icon {
-    display: block;
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-  }
-  
+@media (max-width: 768px) {
   .txtconimagen {
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 1rem;
-  }
-
-
-  .HERO {
     padding: 2rem 1rem;
   }
 
@@ -296,15 +239,14 @@ header .logo img {
   }
 
   .nosotros {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
   }
 
   .servicios .inicio {
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
   }
 
   .tiposervicios {
-    grid-template-columns: 1fr;
-    padding: 2rem 5rem;
+    padding: 2rem 1rem;
   }
 }
