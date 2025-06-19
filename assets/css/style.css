@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Myanmar Sans Pro', sans-serif;
-  background-color: #000000;
   color: #092E44;
   line-height: 1.6;
 }
@@ -19,7 +18,7 @@ h1 {
 
 h2 {
   color: #092E44;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 a {
@@ -32,7 +31,6 @@ footer {
   padding: 20px;
   background-color: #092E44;
   color: #FFFFFF;
-  margin-top: 40px;
 }
 
 .header {
@@ -41,9 +39,8 @@ footer {
   width: 100%;
   height: 50px;
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
-  background-color: #092e44;
+  background-color: #092E44;
   z-index: 1;
-  opacity: 0.85;
 }
 
 .logo {
@@ -75,6 +72,7 @@ header .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 
 .menu a {
@@ -137,25 +135,155 @@ header .logo img {
     font-size: 28px;
     cursor: pointer;
   }
+  .tiposervicios {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
 }
 
 .HERO {
-  background-color: #092E44;
-  color: aliceblue;
-  padding: 50px 20%;
+  background-image: url("../img/Fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 100vh;
+  width: 100%;
 
   display: flex;
-  flex-direction: column; /* Para apilar img y p verticalmente */
-  align-items: center;     /* Centra horizontalmente */
-  justify-content: center; /* Centra verticalmente si hay altura disponible */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 0% 20%;
 }
 
 .HERO img {
-  height: 500px;
+  height: 20%;
   width: auto;
+  margin-bottom: 50px;
 }
 
 .HERO p {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.nosotros {
+  background-image: url("../img/fondo2.png");
+  background-size: auto;
+  background-position: center;
+
+  height: auto;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 1% 20% 5%;
+}
+
+.txtconimagen {
+  display: flex;
+  flex-direction: row;           /* organiza horizontalmente */
+  justify-content: space-between; /* deja espacio entre elementos */
+  align-items: center;           /* alinea verticalmente */
+  gap: 10rem;                     /* espacio mínimo entre elementos */
+  padding: 5rem;
+  background-color: #092E44;
+  margin-top: 1rem;
+}
+
+.txtconimagen h2 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.txtconimagen p {
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.txtconimagen img {
+  height: auto;
+  width: 50%;
+  margin: 3px;
+}
+
+.servicios {
+  min-height: 100vh;
+}
+
+.servicios .inicio {
+  display: flex;
+  flex-direction: row;           /* organiza horizontalmente */
+  justify-content: space-between; /* deja espacio entre elementos */
+  align-items: center;           /* alinea verticalmente */
+  gap: 5rem;                     /* espacio mínimo entre elementos */
+  padding: 2rem 7rem;
+  background-color: #092E44;
+}
+
+.servicios .inicio p{
+  color: #FFFFFF;
+}
+
+.tiposervicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  row-gap: 5rem;                      /* espacio entre bloques */
+  column-gap: 15rem;
+  padding: 5rem 20rem;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.tiposervicios h2 {
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.tiposervicios {
+  margin-bottom: 0%;
+  text-align: justify;
+}
+
+.tiposervicios img {
+  width: 75%;
+  height: auto;
+}
+
+.nosotros .parte {
+  background-color: #353535;
+  opacity: 70%;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 3rem;
+  color: #FFFFFF;
+}
+
+.nosotros .parte h2{
+  color: #FFFFFF;
+}
+
+.HERO .parte {
+  background-color: #092E44;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 3rem;
+  color: #FFFFFF;
+}
+
+.HERO .parte .info-contacto {
+  text-align: left;
+  margin-top: 3rem;
 }
